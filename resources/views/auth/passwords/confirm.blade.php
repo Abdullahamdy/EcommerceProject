@@ -1,13 +1,26 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Confirm Password') }}</div>
 
-                <div class="card-body">
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row px-4 px-lg-5 py-lg-4 align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="h2 text-uppercase mb-0">{{ __('Confirm Password') }}</h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="row">
+            <div class="col-6 offset-3">
+                <h2 class="h5 text-uppercase mb-4">{{ __('Confirm Password') }}</h2>
+
                     {{ __('Please confirm your password before continuing.') }}
 
                     <form method="POST" action="{{ route('password.confirm') }}">
@@ -43,7 +56,5 @@
                     </form>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+    </section>
 @endsection
