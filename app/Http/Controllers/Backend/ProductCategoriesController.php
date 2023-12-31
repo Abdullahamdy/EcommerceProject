@@ -7,12 +7,23 @@ use Illuminate\Http\Request;
 
 class ProductCategoriesController extends Controller
 {
+    private  $mainDirectory;
+    private  $subDirectory;
+    private $path;
+    public function __construct()
+    {
+        $this->mainDirectory = 'backend.';
+        $this->subDirectory = 'product_categories.';
+        $this->path = $this->mainDirectory . $this->subDirectory;
+    }
+
+
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        return view($this->path.__FUNCTION__);
     }
 
     /**
@@ -20,7 +31,7 @@ class ProductCategoriesController extends Controller
      */
     public function create()
     {
-        //
+        return view($this->path.__FUNCTION__);
     }
 
     /**
@@ -36,7 +47,7 @@ class ProductCategoriesController extends Controller
      */
     public function show(string $id)
     {
-        //
+        return view($this->path.__FUNCTION__);
     }
 
     /**
@@ -44,7 +55,7 @@ class ProductCategoriesController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        return view($this->path.__FUNCTION__);
     }
 
     /**

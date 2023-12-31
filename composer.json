@@ -12,7 +12,8 @@
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
         "laravel/ui": "^4.3",
-        "mindscms/entrust": "^2.6"
+        "mindscms/entrust": "^2.6",
+        "predis/predis": "^2.2"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -30,7 +31,8 @@
             "Database\\Seeders\\": "database/seeders/"
         },
         "files": [
-            "app/Helper/CustomHelper.php"
+            "app/Helper/CustomHelper.php",
+            "app/Helper/GeneralHelper.php"
         ]
     },
     "autoload-dev": {

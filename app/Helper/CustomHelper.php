@@ -128,11 +128,17 @@ function redirectedWithMessage()
 
 function getRoutes()
 {
-    $all_permissions =  ['product_coupons', 'products', 'tags', 'product_categories', 'product_reviews', 'customers', 'supervisors', 'countries', 'cities', 'states', 'customer_addresses','shipping_campanies'];
-    $displayName =   ['Coupons', 'Products', 'Tag', 'Categories', 'Reviews', 'Customers', 'Supervisors', 'Countries', 'Cities', 'States', 'CustomerAddresses', 'ShippingCampanies'];
-    $icon =  ['fa fa-percent', 'fas fa-file-archive', 'fas fa-tag', 'fas fa-file-archive', 'fa fa-comment', 'fa fa-user', 'fa fa-user', 'fas fa-globe', 'fas fa-university', 'fas fa-map-marker-alt', 'fas fa-map-marked-alt', 'fas fa-map-marked-alt'];
-    $ordaring =  ['20', '15', '10', '5', '22', '30', '35', '40', '45', '50', '32','49'];
-    $sidebarLink =  ['1', '1', '1', '1', '1', '1', '0', '1', '1', '1', '1','1'];
+    // $all_permissions =  ['product_coupons', 'products', 'tags', 'product_categories', 'product_reviews', 'customers', 'supervisors', 'countries', 'cities', 'states', 'customer_addresses','shipping_campanies'];
+    // $displayName =   ['Coupons', 'Products', 'Tag', 'Categories', 'Reviews', 'Customers', 'Supervisors', 'Countries', 'Cities', 'States', 'CustomerAddresses', 'ShippingCampanies'];
+    // $icon =  ['fa fa-percent', 'fas fa-file-archive', 'fas fa-tag', 'fas fa-file-archive', 'fa fa-comment', 'fa fa-user', 'fa fa-user', 'fas fa-globe', 'fas fa-university', 'fas fa-map-marker-alt', 'fas fa-map-marked-alt', 'fas fa-map-marked-alt'];
+    // $ordaring =  ['20', '15', '10', '5', '22', '30', '35', '40', '45', '50', '32','49'];
+    // $sidebarLink =  ['1', '1', '1', '1', '1', '1', '0', '1', '1', '1', '1','1'];
+    // return  ['all_permissions' => $all_permissions, 'displayName' => $displayName, 'icon' => $icon, 'ordaring' => $ordaring, 'sidebarLink' => $sidebarLink];
+    $all_permissions =  ['product_categories'];
+    $displayName =   [ 'Categories', ];
+    $icon =  ['fas fa-file-archive'];
+    $ordaring =  ['20'];
+    $sidebarLink =  ['1'];
     return  ['all_permissions' => $all_permissions, 'displayName' => $displayName, 'icon' => $icon, 'ordaring' => $ordaring, 'sidebarLink' => $sidebarLink];
 
 
