@@ -15,31 +15,44 @@
                                 <div class="text-center">
                                     <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                 </div>
-                                <form class="user">
+                                <form class="user" method="post" action="{{route('login')}}">
+                                    @csrf
                                     <div class="form-group">
-                                        <input type="email" class="form-control form-control-user" id="exampleInputEmail"
-                                            aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                                        <input name="username" type="text" value="{{old('username')}}" class="form-control form-control-user"
+                                               id="exampleInputEmail" aria-describedby="emailHelp"
+                                               placeholder="Enter Email Address...">
+                                        @error('username')
+                                        <span class="text-danger">
+                                        {{ $message }}
+                                    </span>
+                                        @enderror
                                     </div>
+
                                     <div class="form-group">
-                                        <input type="password" class="form-control form-control-user"
-                                            id="exampleInputPassword" placeholder="Password">
+                                        <input name="password" type="password" class="form-control form-control-user"
+                                               id="exampleInputPassword" placeholder="Password">
+                                        @error('password')
+                                        <span class="text-danger">
+                                        {{ $message }}
+                                    </span>
+                                        @enderror
                                     </div>
                                     <div class="form-group">
                                         <div class="custom-control custom-checkbox small">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck">
-                                            <label class="custom-control-label" for="customCheck">Remember
+                                            <input name="remember" type="checkbox" class="custom-control-input" id="customCheck" {{old('remember') ? 'chacked' : ''}}>
+                                            <label class="custom-control-label" for="remember">Remember
                                                 Me</label>
                                         </div>
                                     </div>
-                                    <a href="index.html" class="btn btn-primary btn-user btn-block">
+                                    <button type="submit" name="login" class="btn btn-primary btn-user btn-block">
                                         Login
-                                    </a>
-
+                                    </button>
+                                    <hr>
 
                                 </form>
                                 <hr>
                                 <div class="text-center">
-                                    <a class="small" href="forgot-password.html">Forgot Password?</a>
+                                    <a class="small" href="route('admin.forget_password')">Forgot Password?</a>
                                 </div>
 
                             </div>
@@ -51,4 +64,5 @@
         </div>
 
     </div>
+
 @endsection
