@@ -21,7 +21,7 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        if (request()->is('admin/*')) {
+        if (request()->is('*/admin/*')) {
             view()->composer('*', function ($view) {
                 if (!Cache::has('admin_side_menu')) {
                     Cache::forever('admin_side_menu', Permission::tree());

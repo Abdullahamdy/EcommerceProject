@@ -12,6 +12,7 @@
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
         "laravel/ui": "^4.3",
+        "mcamara/laravel-localization": "^1.8",
         "mindscms/entrust": "^2.6",
         "predis/predis": "^2.2"
     },
