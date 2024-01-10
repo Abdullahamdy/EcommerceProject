@@ -3,9 +3,12 @@
 namespace App\Models;
 
 use Mindscms\Entrust\EntrustPermission;
+use Spatie\Translatable\HasTranslations;
 
 class Permission extends EntrustPermission
 {
+    use HasTranslations;
+    public $translatable = ['display_name'];
     protected $guarded = [];
 
     public function parent()

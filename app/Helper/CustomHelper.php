@@ -135,7 +135,7 @@ function getRoutes()
     // $sidebarLink =  ['1', '1', '1', '1', '1', '1', '0', '1', '1', '1', '1','1'];
     // return  ['all_permissions' => $all_permissions, 'displayName' => $displayName, 'icon' => $icon, 'ordaring' => $ordaring, 'sidebarLink' => $sidebarLink];
     $all_permissions =  ['product_categories'];
-    $displayName =   [ 'Categories', ];
+    $displayName =   [['en'=>'Categories','ar'=>'الأقسام']];
     $icon =  ['fas fa-file-archive'];
     $ordaring =  ['20'];
     $sidebarLink =  ['1'];

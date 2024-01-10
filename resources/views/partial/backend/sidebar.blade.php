@@ -16,7 +16,6 @@
     @foreach($admin_side_menu as $menu)
         @if(count($menu->appearChildren) == 0)
 
-
             <li class="nav-item {{$menu->id == getParentShowOf($current_page) ? 'active' : null}}">
 
                 <a href="{{route('admin.'. $menu->as)}}" class="nav-link">
