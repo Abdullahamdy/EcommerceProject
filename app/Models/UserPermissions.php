@@ -1,5 +1,6 @@
 <?php
 
+
 namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
@@ -17,4 +18,3 @@ class UserPermissions extends Model
         return $this->belongsToMany(User::class, 'id', 'user_id');
     }
 }
-?>

@@ -134,11 +134,11 @@ function getRoutes()
     // $ordaring =  ['20', '15', '10', '5', '22', '30', '35', '40', '45', '50', '32','49'];
     // $sidebarLink =  ['1', '1', '1', '1', '1', '1', '0', '1', '1', '1', '1','1'];
     // return  ['all_permissions' => $all_permissions, 'displayName' => $displayName, 'icon' => $icon, 'ordaring' => $ordaring, 'sidebarLink' => $sidebarLink];
-    $all_permissions =  ['product_categories'];
-    $displayName =   [['en'=>'Categories','ar'=>'الأقسام']];
-    $icon =  ['fas fa-file-archive'];
-    $ordaring =  ['20'];
-    $sidebarLink =  ['1'];
+    $all_permissions =  ['product_categories','products', 'tags'];
+    $displayName =   [['en'=>'Categories','ar'=>'الأقسام'],['en'=>'Products','ar'=>'المنتجات'],['en'=>'Tags','ar'=>'العلامات التجارية']];
+    $icon =  ['fas fa-file-archive', 'fas fa-file-archive', 'fas fa-tag'];
+    $ordaring =  ['20','19','18'];
+    $sidebarLink =  ['1','1','1'];
     return  ['all_permissions' => $all_permissions, 'displayName' => $displayName, 'icon' => $icon, 'ordaring' => $ordaring, 'sidebarLink' => $sidebarLink];
 
 

@@ -42,6 +42,8 @@ Route::group([
             Route::get('/index', [BackendController::class, 'index'])->name('index');
             Route::get('/', [BackendController::class, 'index'])->name('index_route');
             Route::resource('product_categories', ProductCategoriesController::class);
+            Route::resource('products',ProductController::class);
+            Route::resource('tags',TagController::class);
         });
     });
 });
